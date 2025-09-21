@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Weather in {{ weather.location }}</h1>
+
+    {% if weather.error %}
+        <p class="error"> {{weather.error }}</p>
+    {% else %}
+        <p>
+            Currently: <strong>{{ weather.weather }}</strong>  
+            ({{ weather.description | capitalize }})  
+       <br>
+            🌡 Temperature: <strong>{{ weather.temperature_c }}°C</strong>  
+       <br>
+            💨 Wind: <strong>{{ weather.wind_speed_kmh }} km/h</strong>  
+            blowing from the <strong>{{ weather.wind_dir }}</strong>  
+            </p>
+    {% endif %}
+
+    <a href="/">🔄 Check another location</a>
+</body>
+
+</html>
