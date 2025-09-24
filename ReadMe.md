@@ -30,5 +30,6 @@ The app makes **two API calls**:
 
 ## Future Possible Updates  
 - Add **alerts/notifications** (e.g., Telegram bot for extreme weather).  
+- Suggest related locations if an incorrect location was inputted.
 
 ---
