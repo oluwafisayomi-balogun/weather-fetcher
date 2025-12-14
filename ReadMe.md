@@ -8,11 +8,18 @@ The app makes **two API calls**:
 
 ---
 
-## Features  
-- Input a city name and fetch current weather.  
-- Handles errors gracefully (e.g., if the city isn’t found).  
-- Shows weather description, temperature (°C), and wind speed/direction.  
-- Uses **environment variables** (`.env`) to securely store API keys.  
+## Why I Built This
+
+This project demonstrates practical API integration and backend development using Python.
+
+It highlights my ability to:
+- Work with third-party REST APIs, chaining multiple requests (geocoding → weather data).
+- Design clean request/response flows and present external data in a user-friendly way.
+- Include basic handling for invalid city names and API errors.
+- Manage secrets securely using environment variables instead of hardcoding credentials.
+- Build and deploy a lightweight Flask backend to a production environment (Render).
+
+Beyond fetching weather data, this project reflects my approach to real-world problems: start simple, design for clarity, and leave room for future enhancements such as alerts, bots, or scheduled tasks.
 
 ---
 
